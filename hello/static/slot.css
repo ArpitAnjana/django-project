@@ -1,0 +1,289 @@
+/* *, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+.car-park {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 1rem solid rgb(0, 153, 255);
+  margin: 50px 25% 10px 25%;
+  
+  
+ 
+}
+
+
+
+
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.parks {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.park {
+  display: flex;
+  flex: 0 0 21.3%;
+  padding: 10px;
+  position:relative;
+}
+.park:nth-child(2) {
+  margin-right: 15%;
+}
+.park input[type=checkbox] {
+  position: absolute;
+  opacity: 0;
+}
+.park input[type=checkbox]:checked + label {
+  background: #F42536;
+  -webkit-animation-name: rubberBand;
+  animation-name: rubberBand;
+  animation-duration: 300ms;
+  animation-fill-mode: both;
+}
+.park input[type=checkbox]:disabled + label {
+  background: #dddddd;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
+.park input[type=checkbox]:disabled + label:hover {
+  box-shadow: none;
+  cursor: not-allowed;
+}
+.park label {
+  display: block;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.5rem;
+  padding: 3px 15px;
+  background:#bada55;
+  border-radius: 5px;
+  animation-duration: 300ms;
+  animation-fill-mode: both;
+}
+.park label:before {
+  content: "";
+  position: absolute;
+  width: 75%;
+  height: 75%;
+  top: 1px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 3px;
+}
+.park label:hover {
+  cursor: pointer;
+  box-shadow: 0 0 0px 2px #5C6AFF;
+}
+
+@-webkit-keyframes rubberBand {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes rubberBand {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+.rubberBand {
+  -webkit-animation-name: rubberBand;
+  animation-name: rubberBand;
+} */
+
+
+
+
+/* ==================this is css code=============== */
+
+h2{
+  padding-left: 4rem;
+  color: aliceblue;
+}
+
+.car-park {
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  justify-content: center;
+}
+
+.cabin {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.row {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  margin: 10px;
+}
+
+.parks {
+  display: flex;
+  justify-content: center;
+  margin: 0rem;
+  padding: 0;
+  list-style: none;
+}
+
+.park {
+  margin: 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+label {
+  display: flex;
+  padding: 5px;
+  border: 1px solid rgb(204, 204, 204);
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked + label {
+  background-color: rgb(238, 66, 36);
+}
+
+.checkbox-block {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1rem solid #000;
+  width: 100%;
+  padding: 1rem;
+}
+
+.checkbox-block input[type="checkbox"] {
+  margin: 0.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .checkbox-block {
+    flex-direction: column;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .row {
+    flex-direction: row;
+  }
+  .parks {
+    flex-direction: row;
+  }
+}
+.car-park {
+  border: 1rem solid blue;
+  margin: 3rem 30% 0 30%;
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+
+.row {
+  display: flex;
+  width: 20%;
+  justify-content: space-between;
+}
+
+.park {
+  width: 25%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+label {
+  display: block;
+  background-color: green;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked + label {
+  background-color: rgb(235, 25, 25);
+}
